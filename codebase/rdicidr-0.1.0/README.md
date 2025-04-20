@@ -19,3 +19,9 @@ You can find a live version at the following url:
 [https://rdicidr.rderik.com](https://rdicidr.rderik.com)
 
 If you find this tool useful, you might enjoy reading my blog: [https://rderik.com](https://rderik.com)
+
+git checkout -b test-ci-pass
+echo "Testing CI pipeline" >> README.md
+git add README.md
+git commit -m "Test CI - Should Pass"
+git push origin test-ci-pass
